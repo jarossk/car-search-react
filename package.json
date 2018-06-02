@@ -1,0 +1,16 @@
+{
+  "name": "carshop-search",
+  "version": "0.1.0",
+  "description": "Search cars application. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React",
+    "Webpack",
+    "JsonServer"
+  ],
+  "author": "Jarek",
+  "license": "MIT"
+}
