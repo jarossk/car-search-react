@@ -1,0 +1,62 @@
+header {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid red;
+    text-align: center;
+    height: 150px;
+    padding-left: 10px;
+}
+
+header > div#logo {
+    flex-grow: 1;
+    margin: 5px;
+    padding: 5px;
+}
+.searchForm {
+    flex-grow: 8;
+    border: 1px solid black;
+}
+
+header > form > input[type=text] {
+    
+    
+    margin: 10px 0 10px 10px;
+    padding: 10px 0 10px 10px;
+    font-size: 17px;
+    width: 80%;
+    color: red;
+    
+}
+.XxX {
+    border: 1px solid black;
+    color: green;
+}
+.searchForm > button {
+    width: 20%;
+    background: #B42D12;
+    color: #322A29;
+    font-size: 17px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+@media all and (min-width: 600px) {
+    header {
+        background-color: lightblue;
+        flex-direction: row;
+        line-height: 90px;
+        padding: 0 3rem;
+        position: fixed;
+        width: 100%;
+        text-align: left;
+
+    }
+} 
+
+.footer {
+    background-color: darkgrey;
+
+}

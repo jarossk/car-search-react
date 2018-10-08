@@ -62,10 +62,16 @@ module.exports = {
                 test: /\.(png|jpe?g|gif)$/,
                 use: [{
                     loader: 'url-loader',
-                    ouseBuildIns
-                     useBuildIns
-                    }useBuildIns
+                    options: {
+                        limit: 8192
+                    }
                 }]
+            },
+            {
+               test: /\.(ttf|eot|svg|gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                   use: [{
+                       loader: 'file-loader'
+                   }]
             }
         ]
     },
