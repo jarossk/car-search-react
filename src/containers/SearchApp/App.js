@@ -8,7 +8,7 @@ class App extends Component {
     render() {
         return (
             <BrowserRouter>
-                <div className="app">
+                <div className="App">
                    <SearchApp />
                 </div>
             </BrowserRouter>

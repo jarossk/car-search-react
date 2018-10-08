@@ -19,7 +19,7 @@ class Search extends Component {
         };
 
         this.filterCars = this.filterCars.bind(this);
-        this.changeSearchReslts = this.changeSearchReslts.bind(this);
+        this.changeSearchResults = this.changeSearchResults.bind(this);
         this.submit = this.submit.bind(this);
     }
 
@@ -72,9 +72,9 @@ class Search extends Component {
 
     componentDidMount() {}
 
-    changeSearchReslts(e) {
+    changeSearchResults(e) {
         const query = e.target.value.split(" ");
-        console.log('stateOnChange': this.state.results);
+        console.log('stateOnChange' +this.state.results);
         console.log(query);
     }
 
