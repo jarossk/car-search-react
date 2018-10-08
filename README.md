@@ -1,5 +1,5 @@
 # Search Car
-Search car app is simple app implemented in React.js. Project is configured from scratch with webpack and babel features. 
+Search car is app implemented in React.js. Project is configured from scratch with webpack and babel. Data is file in JSON format fetched via axios library from simple node.js server. 
 
 ### Installing 
 First install all dependencies
