@@ -10,3 +10,10 @@ and then run
 ```
 npm start
 ```
+
+### TO DO
+- more html
+- css styling
+- bootstrap
+- better configuration axios
+- workflow
