@@ -43,24 +43,24 @@ class Search extends Component {
         console.log("from getCars()");
         const query = this.state.query;
 
-        axios.get(`$API_URL`)
+        axios.get(`${API_URL}`)
             .then(({...data}) => {
                 const cars = data.data.slice();
                 console.log('Data': cars);
 
                 const myCars = cars.map(car => {
                     // console.log('From map' + Object.values(car.vehicleCapDetails));
-                    const carDetails = Object.values(carCapDetails);
+                    const carDetails = Object.values(car.vehicleCapDetails);
 
                     return {
                         ...car
                     }
                 });
                 
-                console.log('myCar': myCars);
+                console.log('myCar', myCars);
                 const updateCars = myCars.filter(car => {
                     const carDetails = Object.values(car.vehicleCapDetails);
-                    return carDetails.include(this.state.query);
+                    return carDetails.includes(this.state.query);
                 });
 
                 this.setState({

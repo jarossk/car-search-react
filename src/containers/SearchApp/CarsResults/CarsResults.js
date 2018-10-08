@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import Car from '../../../components/Car';
+import Car from '../../../components/Car/Cars';
 
 class CarsResults extends Component {
     
@@ -17,7 +17,7 @@ class CarsResults extends Component {
         console.log(this.props.query);
         console.log('Search: ', this.props.location);
         const results = this.props.location.state.results;
-        console.log('results', this.props.loaction.state.results);
+        console.log('results', this.props.location.state.results);
         // if (!this.state.error) {
         let carsResults = results.map(car => {
             return (

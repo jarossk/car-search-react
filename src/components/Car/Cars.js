@@ -10,3 +10,5 @@ const car = (props) => {
         </article>
     )
 }
+
+export default car;
